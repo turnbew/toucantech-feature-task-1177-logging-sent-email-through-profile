@@ -1,4 +1,4 @@
-TASK DATE: 31.10.2017 - FINISHED: 
+TASK DATE: 31.10.2017 - FINISHED: 31.10.2017
 
 TASK SHORT DESCRIPTION: 1177 (logging an activity when sending 1-2-1 emails via 'send email' button on profile)
 
