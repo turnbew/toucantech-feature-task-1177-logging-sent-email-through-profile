@@ -15,6 +15,16 @@ CHANGES
 		
 			ADDED CODE: 
 			
+				$lang['activity_tracker_email_was_sent_name']   = 'Sent: %s<br>Subject: %s<br>From: %s<br>To: %s';
+		
+		
+		
+		
+				
+		\network-site\addons\default\modules\network_settings\language\english\network_settings_lang.php
+		
+			ADDED CODE: 
+			
 				$lang['activity_tracker_email_was_sent_name'] = 'Was sent: %s<br>Subject: %s<br>From: %s<br>To: %s';
 	
 	
@@ -34,7 +44,7 @@ CHANGES
 					'date' => $time, 
 					'type' => '0', 
 					'name' => sprintf(lang('activity_tracker_email_was_sent_name'), date('d-m-Y H:i:s', $time), $subject, $email_from, $email_to), 
-					'result' => $email_message, 
+					'result' => strip_tags(str_replace(array("<br>", "&nbsp;"), array("/r/n", " "), $email_message)), 
 					'assigned_to' => $id, 
 					'completed' => 1			
 				);			
