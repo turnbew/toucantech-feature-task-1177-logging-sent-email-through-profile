@@ -1,34 +1,33 @@
+FOR PRIVACY AND CODE PROTECTING REASONS THIS IS A SIMPLIFIED VERSION OF CHANGES AND NEW FEATURES
+
 TASK DATE: 31.10.2017 - FINISHED: 31.10.2017
+
+TASK LEVEL: (HARD)  
 
 TASK SHORT DESCRIPTION: 1177 (logging an activity when sending 1-2-1 emails via 'send email' button on profile)
 
 GITHUB REPOSITORY CODE: feature/task-1177-logging-sent-email-through-profile
 
-ORIGINAL WORK: https://github.com/BusinessBecause/network-site/tree/feature/task-1177-logging-sent-email-through-profile
-
-
 CHANGES
  
 	IN FILES: 
 		
-		\network-site\addons\default\modules\network_settings\language\english\network_settings_lang.php
+		network_settings_lang.php
 		
 			ADDED CODE: 
 			
 				$lang['activity_tracker_email_was_sent_name']   = 'Sent: %s<br>Subject: %s<br>From: %s<br>To: %s';
 		
-		
-		
-		
+
 				
-		\network-site\addons\default\modules\network_settings\language\english\network_settings_lang.php
+		network_settings_lang.php
 		
 			ADDED CODE: 
 			
 				$lang['activity_tracker_email_was_sent_name'] = 'Was sent: %s<br>Subject: %s<br>From: %s<br>To: %s';
 	
 	
-		\network-site\addons\default\modules\network_settings\controllers\members.php	
+		members.php	
 		
 			CHANGED/ADDED CODE: 
 			
@@ -55,7 +54,7 @@ CHANGES
 				$this->activity_tracker_m->assign_user_to_activity($new_tracker_id, $id, $time);
 						
 			
-		\network-site\addons\default\modules\network_settings\models\activity_tracker_m.php	
+		activity_tracker_m.php	
 			
 			CHANGED/ADDED CODE 1:  
 				
